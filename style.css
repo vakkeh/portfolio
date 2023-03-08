@@ -92,6 +92,7 @@
 
 .socials {
 	display: inline-flex;
+	display: -webkit-inline-box;
 	font-size: 2rem;
 	position: relative;
 	bottom: 8rem;
