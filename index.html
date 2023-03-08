@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="bulma/css/bulma.min.css">
+		<link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@200;300;400;500;700;800&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/033a9f1b9e.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div id="myNav" class="overlay">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+					<a class="columnEntity" href="#">about me</a>
+					<a class="columnEntity" href="#">web design</a>
+					<a class="columnEntity" href="#">product design</a>
+					<a class="columnEntity" href="#">video</a>
+					<a class="columnEntity" href="#">music</a>
+					<a class="columnEntity" href="#">contact</a>
+			</div>
+			<div class="socials column">
+				<i class="fa-brands fa-square-facebook"></i>
+				<i class="fa-brands fa-instagram"></i>
+				<i class="fa-brands fa-behance"></i>
+				<i class="fa-brands fa-soundcloud"></i>
+				<i class="fa-brands fa-mixcloud"></i>
+			</div>
+		  </div>
+		<div class="container">
+			<div class="header">
+				<div class="columns">
+					<div class="column titleParent">
+					<h2 class="title">hello, <br>I'm <br>Jan</h2>
+					</div>
+					<div class="column subheader">
+						<h1>jan vales</h1>
+						<div class="webNavigation">
+							<a class="navTile" href="#"><p>about me</p></a>
+							<a class="navTile" href="#"><p>web design</p></a>
+							<a class="navTile" href="#"><p>product design</p></a>
+							<a class="navTile" href="#"><p>video</p></a>
+							<a class="navTile" href="#"><p>music</p></a>
+							<a class="navTile" href="#"><p>contact</p></a>
+						</div>
+						<div class="mobileNavigation">
+							<span class="menuButton" onclick="openNav()">&#9776;</span>
+						</div>
+					</div>	
+				</div>
+			</div>
+			<div class="main">
+				<h3 class="subtitle"><span class="color-red">—</span> about me</h3>
+				<o>My name is Jan and this is my personal website and portfolio. I'm studying Applied Informatics at the University of Economics and Business in Prague. 
+					I'm a freelance designer, photographer, videomaker and music producer. So far I've done several projects ranging from simple landing pages to entire brand identities.
+					<br><br>You can view some of the selected projects in the sections below. 
+				</o>
+			</div>
+		</div>
+		<script>
+			function openNav() {
+			  document.getElementById("myNav").style.width = "100%";
+			}
+			
+			function closeNav() {
+			  document.getElementById("myNav").style.width = "0%";
+			}
+		</script>
+	</body>
+</html>
