@@ -91,6 +91,7 @@
 }
 
 .socials {
+	display: flex;
 	font-size: 2rem;
 	position: relative;
 	bottom: 8rem;
@@ -118,6 +119,31 @@
 }
   
 
+#facebookSocialBtn:hover, #facebookSocialBtn:active {
+	color: #1877f2;
+}
+
+#instagramSocialBtn:hover, #instagramSocialBtn:active {
+	color: #c32aa3;
+}	
+
+#behanceSocialBtn:hover, #behanceSocialBtn:active {
+	color: #053eff;
+}
+
+#soundcloudSocialBtn:hover, #soundcloudSocialBtn:active{
+	color: #ff5500;
+}
+
+#youtubeSocialBtn:hover, #youtubeSocialBtn:active {
+	color: #ff0000;
+}
+
+#mixcloudSocialBtn:hover, #mixcloudSocialBt:active {
+	color: #52aad8;
+}
+
+
 .subtitle {
 	font-weight: 700;
 	font-size: 1.5rem;
@@ -128,16 +154,11 @@
 	margin-bottom: 2%;
 }
 
+
+
 @media all and (orientation: portrait)  {
 	.subheader {
 		text-align: left;
-	}
-}
-
-@media all and (orientation: landscape)  {
-
-	.overlay {
-		overflow: auto;
 	}
 }
 
@@ -149,6 +170,24 @@
 	top: 15px;
 	right: 35px;
 	}*/
+
+	@media all and (orientation: landscape)  {
+
+		.overlay {
+			overflow-y: visible;
+		}
+
+		.overlay-content {
+			padding-top: 5%;
+		}
+
+		.socials {
+			font-size: 2rem;
+			position: relative;
+			bottom: -20%;
+			left: 3.4%;
+		}
+	}
 
 	.webNavigation {
 		display: none;
