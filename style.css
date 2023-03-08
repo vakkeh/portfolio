@@ -132,6 +132,10 @@
 	.subheader {
 		text-align: left;
 	}
+
+	.overlay {
+		overflow: auto;
+	}
 }
 
 @media screen and (max-width: 769px)  {
