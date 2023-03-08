@@ -132,6 +132,9 @@
 	.subheader {
 		text-align: left;
 	}
+}
+
+@media all and (orientation: landscape)  {
 
 	.overlay {
 		overflow: auto;
