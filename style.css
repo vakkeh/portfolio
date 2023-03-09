@@ -168,16 +168,15 @@
 	grid-row-gap: 1rem;
 	overflow-x: scroll;
 	height: 40vh;
-	scroll-snap-type: both mandatory;
 	scroll-padding: 1rem;
 }
 
-.active {
+/*.active {
 	scroll-snap-type: unset;
-}
+}*/
 
 li {
-	scroll-snap-align: center;
+	/*scroll-snap-align: center;*/
 	display: inline-block;
 	border-radius: 3px;
 	font-size: 0;
@@ -241,6 +240,7 @@ li {
 	}
 
 	.gallery {
+		height: 30vh;
 		grid-template-columns: repeat(3, 80vw);
 		scroll-padding: 2rem;
 	}
