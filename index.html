@@ -16,7 +16,7 @@
 					<a class="columnEntity" href="#">about me</a>
 					<a class="columnEntity" href="#">web design</a>
 					<a class="columnEntity" href="#">product design</a>
-					<a class="columnEntity" href="#">video</a>
+					<a class="columnEntity" href="#">photo & video</a>
 					<a class="columnEntity" href="#">music</a>
 					<a class="columnEntity" href="#">contact</a>
 			</div>
@@ -41,7 +41,7 @@
 							<a class="navTile" href="#"><p>about me</p></a>
 							<a class="navTile" href="#"><p>web design</p></a>
 							<a class="navTile" href="#"><p>product design</p></a>
-							<a class="navTile" href="#"><p>video</p></a>
+							<a class="navTile" href="#"><p>photo & video</p></a>
 							<a class="navTile" href="#"><p>music</p></a>
 							<a class="navTile" href="#"><p>contact</p></a>
 						</div>
@@ -52,11 +52,37 @@
 				</div>
 			</div>
 			<div class="main">
-				<h3 class="subtitle"><span class="color-red">—</span> about me</h3>
-				<o>My name is Jan and this is my personal website and portfolio. I'm studying Applied Informatics at the University of Economics and Business in Prague. 
-					I'm a freelance designer, photographer, videomaker and music producer. So far I've done several projects ranging from simple landing pages to entire brand identities.
-					<br><br>You can view some of the selected projects in the sections below. 
-				</o>
+				<div class="about">
+					<h3 class="subtitle"><span class="color-red">—</span> about me</h3>
+					<o class="justifyText">My name is Jan and this is my personal website and portfolio. I'm studying Applied Informatics at the University of Economics and Business in Prague. 
+						I'm a freelance designer, photographer, videomaker and music producer. So far I've done several projects ranging from simple landing pages to entire brand identities.
+						<br><br>You can view some of the selected projects in the sections below. 
+					</o>
+				</div>
+				<div class="webdesign">
+					<h3 class="subtitle"><span class="color-red">—</span> web design</h3>
+					<o class="justifyText paddingBottom">Web design is something I've done for several types of products from event sites to food oriented sites. Every product needs a different approach and as 
+						a fan of minimalistic design I believe a good website should have just the right amount of information to get the intended message across and not overwhelm 
+						the user with countless grouped menus and dropdowns.
+					</o>
+					<ul class="gallery">
+						<li style="background-image: url(resources/img/web1.jpg); background-size: cover;"></li>
+						<li style="background-image: url(resources/img/web2.jpg); background-size: cover;"></li>
+						<li style="background-image: url(resources/img/web3.jpg); background-size: cover;"></li>
+					</ul>
+					<!--<div class="columns is-gapless">
+						<div class="column">
+						<img src="resources/img/web1.jpg">
+						</div>
+						<div class="column">
+						<img src="resources/img/web2.jpg">
+						</div>
+						<div class="column">
+						<img src="resources/img/web3.jpg">
+						</div>
+					</div>-->
+				</div>
+
 			</div>
 		</div>
 		<script>
@@ -68,5 +94,6 @@
 			  document.getElementById("myNav").style.width = "0%";
 			}
 		</script>
+		<script src="carousel.js"></script>
 	</body>
 </html>

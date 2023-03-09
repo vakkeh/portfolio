@@ -155,7 +155,33 @@
 	margin-bottom: 2%;
 }
 
+.justifyText {
+	text-align: justify;
+}
 
+.gallery {
+	padding: 2rem 0 1rem 0;
+	display: grid;
+	grid-template-columns: repeat(3, 35vw);
+	grid-template-rows: 1fr;
+	grid-column-gap: 1rem;
+	grid-row-gap: 1rem;
+	overflow-x: scroll;
+	height: 40vh;
+	scroll-snap-type: both mandatory;
+	scroll-padding: 1rem;
+}
+
+.active {
+	scroll-snap-type: unset;
+}
+
+li {
+	scroll-snap-align: center;
+	display: inline-block;
+	border-radius: 3px;
+	font-size: 0;
+}
 
 @media all and (orientation: portrait)  {
 	.subheader {
