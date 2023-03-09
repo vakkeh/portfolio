@@ -197,24 +197,6 @@ li {
 	right: 35px;
 	}*/
 
-	@media all and (orientation: landscape)  {
-
-		.overlay {
-			overflow-y: visible;
-		}
-
-		.overlay-content {
-			padding-top: 5%;
-		}
-
-		.socials {
-			font-size: 2rem;
-			position: relative;
-			bottom: -20%;
-			left: 3.4%;
-		}
-	}
-
 	.webNavigation {
 		display: none;
 	} 
@@ -243,6 +225,30 @@ li {
 		height: 30vh;
 		grid-template-columns: repeat(3, 80%);
 		scroll-padding: 2rem;
+	}
+
+	@media all and (orientation: landscape)  {
+
+		.overlay {
+			overflow-y: visible;
+		}
+
+		.overlay-content {
+			padding-top: 5%;
+		}
+
+		.socials {
+			font-size: 2rem;
+			position: relative;
+			bottom: -20%;
+			left: 3.4%;
+		}
+
+		.gallery {
+			height: 80vh;
+			grid-template-columns: repeat(3, 80%);
+			scroll-padding: 2rem;
+		}
 	}
 }
 
