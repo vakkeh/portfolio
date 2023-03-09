@@ -199,7 +199,7 @@
 }
 
 .grid-item {
-	width: 32.9%;
+	width: calc(100% / 3.03);
 }
 
 .grid-item img {
@@ -209,6 +209,12 @@
 @media all and (orientation: portrait)  {
 	.subheader {
 		text-align: left;
+	}
+}
+
+@media screen and (max-width: 1410px)  {
+	.grid-item {
+		width: calc(100% / 3.05);
 	}
 }
 
@@ -252,7 +258,7 @@
 	}
 
 	.grid-item {
-		width: 48.8%;
+		width: calc(100% / 2.05);
 	}
 
 	@media all and (orientation: landscape)  {
