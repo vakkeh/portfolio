@@ -239,6 +239,11 @@ li {
 	.container {
 		padding: 0 2rem 2rem 2rem;
 	}
+
+	.gallery {
+		grid-template-columns: repeat(3, 80vw);
+		scroll-padding: 2rem;
+	}
 }
 
 @media screen and (min-width: 769px)  {
