@@ -8,6 +8,8 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@200;300;400;500;700;800&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/033a9f1b9e.js" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="resources/simplelightbox/dist/simple-lightbox.min.css">
 	</head>
 	<body>
 		<div id="myNav" class="overlay">
@@ -40,7 +42,7 @@
 						<div class="webNavigation">
 							<a class="navTile" href="#"><p>about me</p></a>
 							<a class="navTile" href="#"><p>web design</p></a>
-							<a class="navTile" href="#"><p>product design</p></a>
+							<a class="navTile" href="#"><p>graphic design</p></a>
 							<a class="navTile" href="#"><p>photo & video</p></a>
 							<a class="navTile" href="#"><p>music</p></a>
 							<a class="navTile" href="#"><p>contact</p></a>
@@ -61,39 +63,88 @@
 				</div>
 				<div class="webdesign">
 					<h3 class="subtitle"><span class="color-red">—</span> web design</h3>
-					<o class="justifyText paddingBottom">Web design is something I've done for several types of products from event sites to food oriented sites. Every product needs a different approach and as 
+					<o class="justifyText paddingBottom">I've designed websites for several types of products. From bakeries to apparel, every site needs a different approach and as 
 						a fan of minimalistic design I believe a good website should have just the right amount of information to get the intended message across and not overwhelm 
 						the user with countless grouped menus and dropdowns.
 					</o>
 					<ul class="gallery">
-						<li style="background-image: url(resources/img/web1.jpg); background-size: cover; background-position: center;"></li>
-						<li style="background-image: url(resources/img/web2.jpg); background-size: cover; background-position: center;"></li>
-						<li style="background-image: url(resources/img/web3.jpg); background-size: cover; background-position: center;"></li>
+						<a href="#"><li style="background-image: url(resources/img/webdesign/web1.jpg);"></li></a>
+						<a href="#"><li style="background-image: url(resources/img/webdesign/web2.jpg);"></li></a>
+						<a href="#"><li style="background-image: url(resources/img/webdesign/web3.jpg);"></li></a>
 					</ul>
-					<!--<div class="columns is-gapless">
-						<div class="column">
-						<img src="resources/img/web1.jpg">
-						</div>
-						<div class="column">
-						<img src="resources/img/web2.jpg">
-						</div>
-						<div class="column">
-						<img src="resources/img/web3.jpg">
-						</div>
-					</div>-->
 				</div>
+				<div class="productdesign">
+					<h3 class="subtitle"><span class="color-red">—</span> graphic design</h3>
+					<o class="justifyText paddingBottom">Graphic design is something I am quite fond of. I love creating logos, banners, flyers etc. Every assignment is a challenge in itself
+						starting with understanding the target audience and ending with post analysis of what worked and what didn't.
+					</o>
+					<div class="lightgallery grid">
+						<!--<a class="grid-item"><img src="resources/img/graphicdesign/ab-1.jpg" alt=""></a>
+						<a class="grid-item"><img src="resources/img/graphicdesign/ab-2.jpg" alt=""></a>
+						<a class="grid-item"><img src="resources/img/graphicdesign/ab-3.jpg" alt=""></a>
+						<a class="grid-item"><img src="resources/img/graphicdesign/fff-1.jpg" alt=""></a>
+						<a class="grid-item"><img src="resources/img/graphicdesign/sb-1.jpg" alt=""></a>
+						<a class="grid-item"><img src="resources/img/graphicdesign/sb-2.jpg" alt=""></a>
+						<a class="grid-item"><img src="resources/img/graphicdesign/sb-3.jpg" alt=""></a>
+						<a class="grid-item"><img src="resources/img/graphicdesign/ww-1.jpg" alt=""></a>-->
 
+						<a class="grid-item" href="resources/img/graphicdesign/ab-1.jpg">
+							<img alt=".." src="resources/img/graphicdesign/thumbnails/ab-1-thumb.jpg"/>
+						</a>
+						<a class="grid-item" href="resources/img/graphicdesign/ab-2.jpg">
+							<img alt=".." src="resources/img/graphicdesign/thumbnails/ab-2-thumb.jpg"/>
+						</a>
+						<a class="grid-item" href="resources/img/graphicdesign/ab-3.jpg">
+							<img alt=".." src="resources/img/graphicdesign/thumbnails/ab-3-thumb.jpg"/>
+						</a>
+						<a class="grid-item" href="resources/img/graphicdesign/fff-1.jpg">
+							<img alt=".." src="resources/img/graphicdesign/thumbnails/fff-1-thumb.jpg"/>
+						</a>
+						<a class="grid-item" href="resources/img/graphicdesign/sb-1.jpg">
+							<img alt=".." src="resources/img/graphicdesign/thumbnails/sb-1-thumb.jpg"/>
+						</a>
+						<a class="grid-item" href="resources/img/graphicdesign/sb-2.jpg">
+							<img alt=".." src="resources/img/graphicdesign/thumbnails/sb-2-thumb.jpg"/>
+						</a>
+						<a class="grid-item" href="resources/img/graphicdesign/sb-3.jpg">
+							<img alt=".." src="resources/img/graphicdesign/thumbnails/sb-3-thumb.jpg"/>
+						</a>
+						<a class="grid-item" href="resources/img/graphicdesign/ww-1.jpg">
+							<img alt=".." src="resources/img/graphicdesign/thumbnails/ww-1-thumb.jpg"/>
+						</a>
+					</div>
+					<!--<ul class="gallery">
+						<a href="#"><li style="background-image: url(resources/img/web1.jpg);"></li></a>
+						<a href="#"><li style="background-image: url(resources/img/web2.jpg);"></li></a>
+						<a href="#"><li style="background-image: url(resources/img/web3.jpg);"></li></a>
+					</ul>-->
+				</div>
 			</div>
 		</div>
 		<script>
 			function openNav() {
 			  document.getElementById("myNav").style.width = "100%";
+			  $(".container").addClass("noscroll");
 			}
 			
 			function closeNav() {
 			  document.getElementById("myNav").style.width = "0%";
+			  $(".container").removeClass("noscroll");
 			}
 		</script>
 		<script src="carousel.js"></script>
+		<script src="resources/simplelightbox/dist/simple-lightbox.min.js"></script>
+		<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+		<script>
+			var lightbox = new SimpleLightbox('.lightgallery a', { 
+				/* options */ 
+			});
+
+			$('.grid').masonry({
+				// options
+				itemSelector: '.grid-item',
+				gutter: 8
+			});
+		</script>
 	</body>
 </html>

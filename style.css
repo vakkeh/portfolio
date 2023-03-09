@@ -118,6 +118,11 @@
 	right: 3.4%;
 	font-size: 3.5rem;
 }
+
+.noscroll {
+	position: fixed;
+	overflow: hidden;
+}
   
 
 #facebookSocialBtn:hover, #facebookSocialBtn:active {
@@ -175,11 +180,30 @@
 	scroll-snap-type: unset;
 }*/
 
-li {
+.gallery a {
 	/*scroll-snap-align: center;*/
 	display: inline-block;
 	border-radius: 3px;
 	font-size: 0;
+}
+
+.gallery a li {
+	background-size: cover; 
+	background-position: center;
+	height: 100%;
+	width: auto;
+}
+
+.lightgallery {
+	padding-top: 2rem;
+}
+
+.grid-item {
+	width: 32.9%;
+}
+
+.grid-item img {
+	width: 100%;
 }
 
 @media all and (orientation: portrait)  {
@@ -225,6 +249,10 @@ li {
 		height: 30vh;
 		grid-template-columns: repeat(3, 80%);
 		scroll-padding: 2rem;
+	}
+
+	.grid-item {
+		width: 49%;
 	}
 
 	@media all and (orientation: landscape)  {
