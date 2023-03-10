@@ -198,15 +198,26 @@
 	padding-top: 2rem;
 }
 
+.paddingBottom {
+	padding-bottom: 2rem;
+}
+
 .grid-item {
+	transition: 0.2s ease-in-out;
 	width: calc(100% / 3.03);
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  	filter: grayscale(100%);
+}
+.grid-item:hover {
+	-webkit-filter: none;
+	filter: none;
 }
 
 .grid-item img {
 	width: 100%;
 }
 
-.viewMore {
+.showProjects {
 	color: black;
 	width: 100%;
 	text-align: center; 
@@ -215,7 +226,17 @@
 	transition: 0.3s ease-in-out;
 }
 
-.viewMore:hover {
+.viewMore {
+	color: black;
+	width: 40%;
+	text-align: center; 
+	float: right;
+	padding: 1rem; 
+	border: 1px solid black;
+	transition: 0.3s ease-in-out;
+}
+
+.viewMore:hover, .showProjects:hover {
 	border: 1px solid black;
 	color: white;
 	background-color: black;
@@ -230,6 +251,8 @@
 @media screen and (max-width: 1410px)  {
 	.grid-item {
 		width: calc(100% / 3.05);
+		-webkit-filter: none;
+		filter: none;
 	}
 }
 
