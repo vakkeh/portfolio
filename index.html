@@ -78,7 +78,7 @@
 					<o class="justifyText paddingBottom">Graphic design is something I am quite fond of. I love creating logos, banners, flyers etc. Every assignment is a challenge in itself
 						starting with understanding the target audience and ending with post analysis of what worked and what didn't.
 					</o>
-					<div class="lightgallery grid">
+					<div class="lightgallery grid paddingTop">
 						<a class="grid-item" href="resources/img/graphicdesign/ab-1.jpg">
 							<img alt=".." src="resources/img/graphicdesign/thumbnails/ab-1-thumb.jpg"/>
 						</a>
@@ -100,13 +100,10 @@
 						<a class="grid-item" href="resources/img/graphicdesign/sb-3.jpg">
 							<img alt=".." src="resources/img/graphicdesign/thumbnails/sb-3-thumb.jpg"/>
 						</a>
-						<a class="grid-item" href="resources/img/graphicdesign/ww-1.jpg">
-							<img alt=".." src="resources/img/graphicdesign/thumbnails/ww-1-thumb.jpg"/>
-						</a>
 					</div>
 					<br>
 					<br>
-					<p style="text-align: center; padding: 1rem; border: 1px solid black;">View more...</p>
+					<a href="#"><p class="viewMore">View more...</p></a>
 					<br>
 				</div>
 				<div class="photovideo">
@@ -114,6 +111,30 @@
 					<o class="justifyText paddingBottom">I do photography and shoot videos in my spare time as a side project. I edit the photos using Lightroom or Photoshop and post them on
 						several platforms such as VSCO. The Videos are uploaded to several channels on YouTube I manage. 
 					</o>
+					<div class="lightgallery2 grid paddingTop">
+						<a class="grid-item" href="resources/img/photo/1.jpg">
+							<img alt=".." src="resources/img/photo/thumbnail/1-thumb.jpg"/>
+						</a>
+						<a class="grid-item" href="resources/img/photo/2.jpg">
+							<img alt=".." src="resources/img/photo/thumbnail/2-thumb.jpg"/>
+						</a>
+						<a class="grid-item" href="resources/img/photo/3.jpg">
+							<img alt=".." src="resources/img/photo/thumbnail/3-thumb.jpg"/>
+						</a>
+						<a class="grid-item" href="resources/img/photo/4.jpg">
+							<img alt=".." src="resources/img/photo/thumbnail/4-thumb.jpg"/>
+						</a>
+						<a class="grid-item" href="resources/img/photo/5.jpg">
+							<img alt=".." src="resources/img/photo/thumbnail/5-thumb.jpg"/>
+						</a>
+						<a class="grid-item" href="resources/img/photo/6.jpg">
+							<img alt=".." src="resources/img/photo/thumbnail/6-thumb.jpg"/>
+						</a>
+					</div>
+					<br>
+					<br>
+					<a href="#"><p class="viewMore">View more...</p></a>
+					<br>
 				</div>
 			</div>
 		</div>
@@ -132,15 +153,16 @@
 		<script src="resources/simplelightbox/dist/simple-lightbox.min.js"></script>
 		<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 		<script>
-			var lightbox = new SimpleLightbox('.lightgallery a', { 
-				/* options */ 
-			});
-
 			$(document).ready(function() {
-				$('.grid').masonry({
-					// options
-					itemSelector: '.grid-item',
-					gutter: 7
+				var lightbox = new SimpleLightbox('.lightgallery a', { });
+				var lightbox = new SimpleLightbox('.lightgallery2 a', { });
+
+				$('.grid').each(function() {
+					$(this).masonry({
+						// options
+						itemSelector: '.grid-item',
+						gutter: 7
+					});
 				});
 			});
 		</script>

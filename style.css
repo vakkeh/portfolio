@@ -194,7 +194,7 @@
 	width: auto;
 }
 
-.lightgallery {
+.paddingTop {
 	padding-top: 2rem;
 }
 
@@ -204,6 +204,21 @@
 
 .grid-item img {
 	width: 100%;
+}
+
+.viewMore {
+	color: black;
+	width: 100%;
+	text-align: center; 
+	padding: 1rem; 
+	border: 1px solid black;
+	transition: 0.3s ease-in-out;
+}
+
+.viewMore:hover {
+	border: 1px solid black;
+	color: white;
+	background-color: black;
 }
 
 @media all and (orientation: portrait)  {
