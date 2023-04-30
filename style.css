@@ -1,6 +1,32 @@
+html {
+	scroll-behavior: smooth;
+}
+
 * {
 	font-family: 'Azeret Mono', monospace;
 }
+
+#loading {
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	position: fixed;
+	display: block;
+	background-color: #fff;
+	z-index: 99;
+	text-align: center;
+  }
+  
+  #loading-image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+  }
 
 .title {
 	font-family: 'Montserrat', sans-serif;
@@ -149,6 +175,10 @@
 	color: #52aad8;
 }
 
+#linkedinSocialBtn:hover, #linkedinSocialBtn:active {
+	color: #0077b5;
+}
+
 
 .subtitle {
 	font-weight: 700;
@@ -228,7 +258,7 @@
 
 .viewMore {
 	color: black;
-	width: 40%;
+	width: 50%;
 	text-align: center; 
 	float: right;
 	padding: 1rem; 
@@ -242,11 +272,47 @@
 	background-color: black;
 }
 
-@media all and (orientation: portrait)  {
+.footer {
+	font-size: 1.2rem;
+	height: 20vh;
+	width: 100%;
+	background-color: black;
+	color: white;
+	padding: 2rem 0 2rem 0;
+}
+
+.footerContent {
+	max-width: 1344px;
+	margin: 0 auto;
+	display: flow-root;
+	height: 100%;
+}
+
+.rightFooter {
+	text-align: right;
+	margin-top:auto;
+}
+
+.socialsFooter {
+	color: white;
+	font-size: 1.5rem;
+	padding: 0 0 1rem 0;
+	bottom: 8rem;
+}
+
+.socialsFooter a {
+	color: white;
+}
+
+.footerColumn {
+	padding: 0;
+}
+
+/*@media all and (orientation: portrait)  {
 	.subheader {
 		text-align: left;
 	}
-}
+}*/
 
 @media screen and (max-width: 1410px)  {
 	.grid-item {
@@ -254,9 +320,13 @@
 		-webkit-filter: none;
 		filter: none;
 	}
+
+	.footer {
+		/*padding: 3rem 2rem 3rem 2rem;*/
+	}
 }
 
-@media screen and (max-width: 769px)  {
+@media screen and (max-width: 800px)  {
 
 	/*.overlay a {font-size: 20px}
 	.overlay .closebtn {
@@ -299,6 +369,19 @@
 		width: calc(100% / 2.05);
 	}
 
+	.footer {
+		display: table;
+		font-size: 1rem;
+		width: 100%;
+		background-color: black;
+		color: white;
+	}
+
+	.rightFooter {
+		text-align: left;
+		margin-top: 2rem;
+	}
+
 	@media all and (orientation: landscape)  {
 
 		.overlay {
@@ -324,7 +407,7 @@
 	}
 }
 
-@media screen and (min-width: 769px)  {
+@media screen and (min-width: 800px)  {
 
 	.webNavigation {
 		display: block;

@@ -12,23 +12,26 @@
 		<link rel="stylesheet" href="resources/simplelightbox/dist/simple-lightbox.min.css">
 	</head>
 	<body>
+		<div id="loading">
+			<img id="loading-image" src="resources/img/loader/loading.gif" alt="Loading..." />
+		  </div>
 		<div id="myNav" class="overlay">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 			<div class="overlay-content">
-					<a class="columnEntity" href="#">about me</a>
-					<a class="columnEntity" href="#">web design</a>
-					<a class="columnEntity" href="#">product design</a>
-					<a class="columnEntity" href="#">photo & video</a>
-					<a class="columnEntity" href="#">music</a>
-					<a class="columnEntity" href="#">contact</a>
+					<a class="columnEntity mobileNavElement" href="#aboutmesection">about me</a>
+					<a class="columnEntity mobileNavElement" href="#webdesignsection">web design</a>
+					<a class="columnEntity mobileNavElement" href="#graphicdesignsection">graphic design</a>
+					<a class="columnEntity mobileNavElement" href="#photovideosection">photo & video</a>
+					<a class="columnEntity mobileNavElement" href="#musicprodsection">music</a>
+					<a class="columnEntity mobileNavElement" href="#contactssection">contact</a>
 			</div>
 			<div class="socials column">
-				<a class="fa-brands fa-square-facebook" id="facebookSocialBtn" href="#"></a>
 				<a class="fa-brands fa-instagram" id="instagramSocialBtn" href="#"></a>
+				<a class="fa-brands fa-linkedin" id="linkedinSocialBtn" href="#"></a>
+				<a class="fa-brands fa-square-facebook" id="facebookSocialBtn" href="#"></a>
 				<a class="fa-brands fa-behance" id="behanceSocialBtn" href="#"></a>
 				<a class="fa-brands fa-soundcloud" id="soundcloudSocialBtn" href="#"></a>
 				<a class="fa-brands fa-youtube" id="youtubeSocialBtn" href="#"></a>
-				<a class="fa-brands fa-mixcloud" id="mixcloudSocialBtn" href="#"></a>
 			</div>
 		  </div>
 		<div class="container">
@@ -40,12 +43,12 @@
 					<div class="column subheader">
 						<h1>jan vales</h1>
 						<div class="webNavigation">
-							<a class="navTile" href="#"><p>about me</p></a>
-							<a class="navTile" href="#"><p>web design</p></a>
-							<a class="navTile" href="#"><p>graphic design</p></a>
-							<a class="navTile" href="#"><p>photo & video</p></a>
-							<a class="navTile" href="#"><p>music</p></a>
-							<a class="navTile" href="#"><p>contact</p></a>
+							<a class="navTile smooth-link" href="#aboutmesection"><p>about me</p></a>
+							<a class="navTile smooth-link" href="#webdesignsection"><p>web design</p></a>
+							<a class="navTile smooth-link" href="#graphicdesignsection"><p>graphic design</p></a>
+							<a class="navTile smooth-link" href="#photovideosection"><p>photo & video</p></a>
+							<a class="navTile smooth-link" href="#musicprodsection"><p>music</p></a>
+							<a class="navTile smooth-link" href="#contactssection"><p>contact</p></a>
 						</div>
 						<div class="mobileNavigation">
 							<span class="menuButton" onclick="openNav()">&#9776;</span>
@@ -54,14 +57,14 @@
 				</div>
 			</div>
 			<div class="main">
-				<div class="about">
+				<div class="about" id="aboutmesection">
 					<h3 class="subtitle"><span class="color-red">—</span> about me</h3>
 					<o class="justifyText">My name is Jan and this is my personal website and portfolio. I'm studying Applied Informatics at the University of Economics and Business in Prague. 
 						I'm a freelance designer, photographer, videomaker and music producer. So far I've done several projects ranging from simple landing pages to entire brand identities.
 						<br><br>You can view some of the selected projects in the sections below. 
 					</o>
 				</div>
-				<div class="webdesign">
+				<div class="webdesign" id="webdesignsection">
 					<h3 class="subtitle"><span class="color-red">—</span> web design</h3>
 					<o class="justifyText paddingBottom">I've designed websites for several types of products. From bakeries to apparel, every site needs a different approach and as 
 						a fan of minimalistic design I believe a good website should have just the right amount of information to get the intended message across and not overwhelm 
@@ -73,7 +76,7 @@
 						<a href="#"><li style="background-image: url(resources/img/webdesign/web3.jpg);"></li></a>
 					</ul>
 				</div>
-				<div class="graphicdesign paddingBottom">
+				<div class="graphicdesign paddingBottom" id="graphicdesignsection">
 					<h3 class="subtitle"><span class="color-red">—</span> graphic design</h3>
 					<o class="justifyText paddingBottom">Graphic design is something I am quite fond of. I love creating logos, banners, flyers etc. Every assignment is a challenge in itself
 						starting with understanding the target audience and ending with post analysis of what worked and what didn't.
@@ -109,7 +112,7 @@
 						<br>
 					</div>
 				</div>
-				<div class="photovideo paddingBottom">
+				<div class="photovideo paddingBottom" id="photovideosection">
 					<h3 class="subtitle"><span class="color-red">—</span> photo & video</h3>
 					<o class="justifyText paddingBottom">I do photography and shoot videos in my spare time as a side project. I edit the photos using Lightroom or Photoshop and post them on
 						several platforms such as VSCO. The Videos are uploaded to several channels on YouTube I manage. 
@@ -142,6 +145,48 @@
 						<br>
 					</div>
 				</div>
+				<div class="musicprod paddingBottom" id="musicprodsection">
+					<h3 class="subtitle"><span class="color-red">—</span> music</h3>
+					<o class="justifyText paddingBottom">Music production and DJing are another hobbies I enjoy doing. I performed under the name VAKKEH where I released several electronic tracks
+						in mainly house genre. Currently I am working on my new techno project WARLOW where I released my first single "Arson".
+						<br><br>Here are some of the tracks I made:<br><br>
+					</o>
+					<!--<a id="togglePhotos"><p class="showProjects" style="margin-top: 2rem;">show projects...</p></a>-->
+					<div class="musicprod-content">
+							<iframe width="100%" height="150" scrolling="yes" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1382445121&color=%238b0000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true&show_artwork=false"></iframe><div style="font-size: 10px; color: #8b0000;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/vakkeh" title="VAKKEH" target="_blank" style="color: #000000; text-decoration: none;">VAKKEH</a> · <a href="https://soundcloud.com/vakkeh/ac-here-vakkeh-remix" title="Here (VAKKEH Remix)" target="_blank" style="color: #000000; text-decoration: none;">Here (VAKKEH Remix)</a></div><br>
+							<iframe width="100%" height="150" scrolling="yes" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1066144684&color=%238b0000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true&show_artwork=false"></iframe><div style="font-size: 10px; color: #8b0000;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/vakkeh" title="VAKKEH" target="_blank" style="color: #000000; text-decoration: none;">VAKKEH</a> · <a href="https://soundcloud.com/vakkeh/edge" title="EDGE" target="_blank" style="color: #000000; text-decoration: none;">EDGE</a></div><br>
+							<iframe width="100%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1442423329&color=%238b0000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true&show_artwork=false"></iframe><div style="font-size: 10px; color: #8b0000;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/warlowsound" title="WARLOW" target="_blank" style="color: #000000; text-decoration: none;">WARLOW</a> · <a href="https://soundcloud.com/warlowsound/warlow-arson" title="WARLOW - Arson" target="_blank" style="color: #000000; text-decoration: none;">WARLOW - Arson</a></div>
+						<br>
+						<p>More links:</p><br>
+						<a href="#">VAKKEH Soundcloud</a><br>
+						<a href="#">WARLOW Soundcloud</a><br>
+						<a href="#">WARLOW Mixcloud</a><br>		
+						<br>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer" id="contactssection">
+			<div class="columns footerContent container">
+				<div class="column footerColumn">
+					<p>Contact:</p>
+					<p><i class="fa-regular fa-envelope"></i> janvales.jr@gmail.com</p>
+					<p><i class="fa-brands fa-instagram"></i> @__valesh</p>
+					<p><i class="fa-brands fa-linkedin"></i> janvalesjr</p>
+				</div>
+				<div class="column rightFooter footerColumn">
+					<div class="socialsFooter">
+						<a class="fa-brands fa-instagram" id="instagramSocialBtn" href="#"></a>
+						<a class="fa-brands fa-linkedin" id="linkedinSocialBtn" href="#"></a>
+						<a class="fa-brands fa-square-facebook" id="facebookSocialBtn" href="#"></a>
+						<a class="fa-brands fa-behance" id="behanceSocialBtn" href="#"></a>
+						<a class="fa-brands fa-soundcloud" id="soundcloudSocialBtn" href="#"></a>
+						<a class="fa-brands fa-youtube" id="youtubeSocialBtn" href="#"></a>
+						<a class="fa-brands fa-mixcloud" id="mixcloudSocialBtn" href="#"></a>
+					</div>
+					<p>© 2023 — Jan Vales</p>
+				</div>
+
 			</div>
 		</div>
 		<script>
@@ -154,24 +199,44 @@
 			  document.getElementById("myNav").style.width = "0%";
 			  $(".container").removeClass("noscroll");
 			}
+
+			$(document).on("click",".mobileNavElement", function () {
+				var href = $(this).attr('href');
+				closeNav();
+				location.href = href;
+			});
 		</script>
 		<script src="carousel.js"></script>
 		<script src="resources/simplelightbox/dist/simple-lightbox.min.js"></script>
 		<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 		<script>
-			$(document).ready(function() {
 
-				var lightbox = new SimpleLightbox('.lightgallery a', { });
-				var lightbox = new SimpleLightbox('.lightgallery2 a', { });
+			displayLoading();
 
-				$('.grid').each(function() {
-					$(this).masonry({
-						// options
-						itemSelector: '.grid-item',
-						gutter: 7
-					});
+			$('.grid').each(function() {
+				$(this).masonry({
+					// options
+					itemSelector: '.grid-item',
+					gutter: 7
 				});
+			});
 
+			var lightbox = new SimpleLightbox('.lightgallery a', { });
+			var lightbox = new SimpleLightbox('.lightgallery2 a', { });
+
+			/*$(document).on("ready", function() {
+
+				function scrollToAnchor(aid){
+					const destination = $("#"+ aid);
+					$('html,body').animate({
+						scrollTop: destination.offset().top
+					},'slow');
+				}
+
+				$(document).on('click', '.smooth-link', function(){
+					scrollToAnchor('demo');
+				});
+			});*/
 				/*$("#togglePhotos").click(function() {
 					$(".photovideo-content").toggle();
 				});
@@ -182,6 +247,31 @@
 
 				$(".photovideo-content").hide();
 				$(".graphicdesign-content").hide();*/
+
+			$( window ).resize(function() {
+				$('.grid').each(function() {
+					$(this).masonry({
+						// options
+						itemSelector: '.grid-item',
+						gutter: 7
+					});
+				});
+			});
+
+			function displayLoading() {
+					$('#loading').show();
+
+					setTimeout(() => {
+				        $('#loading').fadeOut("slow");
+				    }, 5000);
+			}
+
+			function hideLoading() {
+				$('#loading').fadeOut("slow");
+			}
+
+			$(window).on('load', function(){
+				$('#loading').fadeOut("slow");
 			});
 		</script>
 	</body>
